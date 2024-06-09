@@ -18,7 +18,7 @@ Files can always be changed in a secret way. Can you find the flag?
 
 First of all, I used `file` command to check the actual type of that file. It showed JPEG image data. Then opened it with the image viewer but nothing to search for. After that I searched for metadata that I usuallly do and it showed something interesting:
 
-![Alt text]([image.png](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image.png))
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image.png)
 
 Finally after decoding the string I got the flag `picoCTF{the_m3tadata_1s_modified}`
 
