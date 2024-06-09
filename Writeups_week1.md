@@ -448,9 +448,9 @@ First I didn't know any tool to reverse search a video. So, I took this screetsh
 
 ![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-30.png)
 
-But I could not find a similar image in any search engine. Then I tried to search using the date.
+Uploaded this image in google lens and after searching a bit I clicked in ***image source*** and there I found a number of youtube videos pointing that the incident happened in ***Romania*** and had an magnitude of ***5.8***. Also found [this](https://www.youtube.com/watch?v=lvGpouFqmJ0) video which is the same one we were given in the exercise. Also ***"Cutremur Chisinau"*** in the video is written in Romanian and means ***Chisinau earthquake***. Then I searched for Chisinau in google map and it was in Moldova, a neighbour country of Romania. 
 
-##### !! Remaining part in progress.
+Next I had to find the exact location of the footage area. I searched in google map but could not find it. I also tried cropping at different parts of the screenshot but no result. Then I watched the video and realized how to deal with such problems. After narrowing our search zone by searching for all the car dealers in that area and then trying to locate with the roads and buildings nearby helped us in this case. And finally got the coordinates of the camera ***47.017555N 28.85275E***.
 
 
 ### <mark> #026
