@@ -34,11 +34,11 @@ Matryoshka dolls are a set of wooden dolls of decreasing size placed one inside 
 
 Firstly, `file dolls.jpg` showed that it actually is a png image. Now, `decreasing size` in the description indicated that the file may be compressed multiple times. So, I used `binwalk dolls.jpg` and it showed that the file contains a zip archive and a png image file.
 
-![Alt text](image-1.png)
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-1.png)
 
 Then extracted it using the ``binwalk -e dolls.jpg``. Then `cd _dolls.jpg.extracted` followed by:
 
-![Alt text](image-2.png)
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-2.png)
 
 Repeated the same steps several times and finally got the file `flag.txt` which contained the flag `picoCTF{336cf6d51c9d9774fd37196c1d7320ff}`
 
@@ -54,15 +54,15 @@ We found this `file`. Recover the flag.
 
 I started checking the file type and it showed data. Then I tried to see its contents using cat but it ran some unknown binary and corrupted my terminal. Then I closed it and opened again and searched for metadata.
 
-![Alt text](image-11.png)
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-11.png)
 
 It showed that the file is actually bmp type which indicated that the file might have been corrupted. I also was unable to open it using my image viewer. So, I opened hexeditor and found the corrupted part.
 
-![Alt text](image-12.png)
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-12.png)
 
 Then rectified them using an actual bmp file. Now my image viewer opened it but it showed `notaflag{sorry}`. But it seemed that the full picture was not being seen due to height issues.
 
-![Alt text](image-13.png)
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-13.png)
 
 Then got the image height(306) from metadata and increased the height using hexeditor. Now the entire image was visible and we found the flag `picoCTF{qu1t3_a_v13w_2020}`. 
 
@@ -80,11 +80,11 @@ This challenge is only about searching here and there and finding the `hidden` f
 
 First I used `file` and `exiftool` to know the actual file type and they showed that it was `Microsoft PowerPoint`. Then as usual extracted the zip archive files using `binwalk -e Forensics\ is\ fun.pptm`. Then `cd _Forensics\ is\ fun.pptm.extracted` followed by-
 
-![Alt text](image-14.png)
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-14.png)
 
 Then opened the `[Content_Types].xml` file with sublime text but found nothing. Then one by one I checked all the directories and files and finally inside `ppt/slideMasters`, found the file `hidden`.
 
-![Alt text](image-15.png)
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-15.png)
 
 Now opened it using sublime text and removed all the spaces to get the base64 encoded string which after decoding gave the flag `picoCTF{D1d_u_kn0w_ppts_r_z1p5}`.
 
@@ -100,17 +100,17 @@ Download this image file and find the flag.
 
 I randomly tried some tools but they didn't work. But when I opened the file in `sublime text` and scrolled down, I noticed this-
 
-![Alt text](image-3.png)
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-3.png)
 
 This must have been the flag but not in the proper format, so I had to arrange it properly. So, again I used `strings drawing.flag.svg`. It showed the same thing but I had missed it first time 😅. 
 
 Then I started arranging it-
 
-![Alt text](image-4.png)
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-4.png)
 
-![Alt text](image-5.png)
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-5.png)
 
-![Alt text](image-6.png)
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-6.png)
 
 Thus got the flag `picoCTF{3nh4nc3d_24374675}`
 
@@ -126,15 +126,15 @@ Ron just found his own copy of advanced potion making, but its been corrupted by
 
 First as usual I used `file advanced-potion-making` and it showed data. Then `exiftool advanced-potion-making` showed `unknown file type`. Next I used strings and it gave some clue:
 
-![Alt text](image-17.png)
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-17.png)
 
 I wasn't familiar with these words, so I searched and found that IHDR is normally associated with png image files. This indicated that the magic bytes of the png file might have been corrupted. So, next I used `hexedit advanced-potion-making`.
 
-![Alt text](image-18.png)
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-18.png)
 
 Then changed the two bytes `42 11 -> 4E 47` and run `eog advanced-potion-making`. It showed invalid IHDR length.
 
-![Alt text](image-19.png)
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-19.png)
 
 Then I searched for IHDR header and found this image.
 
@@ -154,15 +154,15 @@ This file was found among some files marked confidential but my pdf reader canno
 
 `file Flag.pdf` showed that the file was `shell archive text`. `cat Flag.pdf` showed some comments which seemed to be beneficial-
 
-![Alt text](image-8.png)
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-8.png)
 
 Now the command `sh Flag.pdf` extracted a `flag` file which was of type `current ar archive`. Then `binwalk flag` showed that it contained a `bzip2 compressed` file.
 
 Extracted it using `binwalk -e flag` followed by `cd _flag.extracted`. There was a file `64` which was gzip compressed. Then I had to decompress the file multiple times to get the flag.
 
-![Alt text](image-9.png)
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-9.png)
 
-![Alt text](image-10.png)
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-10.png)
 
 Similarly did these extractions: `lzip -> LZ4 -> LZMA -> lzop -> lzip -> XZ -> ASCII data` and finally got the encoded string which after decoding gave the flag `picoCTF{f1len@m3_m@n1pul@t10n_f0r_0b2cur17y_3c79c5ba}`
 
@@ -179,11 +179,11 @@ The SOC analyst saw one image been sent back and forth between two people. They 
 
 I started using binwalk.
 
-![Alt text](image-20.png)
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-20.png)
 
 And it seemed promising. Then extracted the files. Then `cd _flag.png.extracted`. 
 
-![Alt text](image-21.png)
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-21.png)
 
 Inside the directory `secret` there is a file `flag.png`. Simply using `eog flag.png` showed the flag `picoCTF{Hiddinng_An_imag3_within_@n_ima9e_d55982e8}`. 
 
@@ -266,7 +266,7 @@ print(hidden_message)
 
 It also didn't work. Next I used `Aperi solve` but this time it was unable to find something. I even downloaded `openstego` but it showed -
 
-![Alt text](image-22.png)
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-22.png)
 
 Then I searched for `MSB steganography decoder online` and first found [this](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://stylesuxx.github.io/steganography/&ved=2ahUKEwiz9p6FkcmGAxXbj68BHWSyF3YQFnoECBQQAQ&usg=AOvVaw3BoM9agDA-VTpFMEwSX5LG) website. It also didn't work. Then looked into [this](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://medium.com/ctf-writeups/stegonline-a-new-steganography-tool-b4eddb8f8f57&ved=2ahUKEwiz9p6FkcmGAxXbj68BHWSyF3YQFnoECBgQAQ&usg=AOvVaw1Kqu9j_xk7ofDmsC4QSqTd) second link and 
 learned about stegonline. In this tool we can modify any bits according to our choice. So I went to [stegonline](https://stegonline.georgeom.net/) and selected `Extract files/data`. There I marked the R,G,B boxes for the 7th bit and it extracted the data. Then I opened the downloaded file in sublime text and searched for the string `picoCTF` and found the flag `picoCTF{15_y0ur_que57_qu1x071c_0r_h3r01c_3a219174}`.
@@ -308,7 +308,7 @@ Just write `Let's go`.
 
 Simply using exiftool on the file, we get the metadata. 
 
-![Alt text](image-23.png)
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-23.png)
 
 And the username of the attacker is `SakuraSnowAngelAiko`.
 
@@ -318,7 +318,7 @@ And the username of the attacker is `SakuraSnowAngelAiko`.
 
 Now inside the directory, `/sherlock/sherlock`, we run `python3 sherlock.py SakuraSnowAngelAiko` to get the other websites where the username is used. I started going through the links and the [github](https://www.github.com/SakuraSnowAngelAiko) link showed some relavant details. I started searching the repositories and in the `PGP` repository, I found the `PGP public key` of the attacker. Then from chatGPT I got to know how to get the email address from the key. So, I used `nano demo.asc` and pasted the public PGP key there. Next used the command-
 
-![Alt text](image-24.png)
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-24.png)
 
 And got the email address `SakuraSnowAngel83@protonmail.com`.
 
@@ -346,9 +346,9 @@ Next I downloaded [this](https://raw.githubusercontent.com/OsintDojo/public/main
 
 Then after searching a while for a site that could give information about BSSID, in chatGPT I found this [Wigle.net](https://wigle.net/) site. Then as instructed in the hints, I first registered an account there and used the advanced search. Then I put the SSID `DK1F-G` which I found from the previous screenshot and hit Query.
 
-![Alt text](image-25.png)
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-25.png)
 
-![Alt text](image-26.png)
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-26.png)
 
 And thus got the BSSID `84:af:ec:34:fc:f8`.
 
@@ -364,7 +364,7 @@ Now its turn for the map [image](https://pbs.twimg.com/media/EsiNRuRU0AEH32u?for
 
 Now tried with the map to somehow find the home city but nothing worked. Then after watching the hint, I got that the wifi details may help this time and went back to [Wigle.net](https://wigle.net/). There put the SSID and BSSID, hit query and clicked in the map botton.
 
-![Alt text](image-28.png)
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-28.png)
 
 And it pointed to the city `Hirosaki`.
 
@@ -392,7 +392,7 @@ a) Verify the statement above.
 
 Simply we reverse search for the image and in `Tineye` we find [this](https://alamy-ltd.ewrvdi.net/c/77643/748811/10905?u=https%3A%2F%2Fwww.alamy.com%2Fwaziriyaautobombeirak-image574866988.html) site. Scrolling a little down we find this.
 
-![Alt text](image-29.png)
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-29.png)
 
 The image data was taken in 28 August 2006 and the date in the tweet is Jan 19,2023 which is definitely false.
 
@@ -446,7 +446,7 @@ b) What are the coordinates of where the camera was likely located in order to r
 
 First I didn't know any tool to reverse search a video. So, I took this screetshot and tried to analyse it.
 
-![Alt text](image-30.png)
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-30.png)
 
 But I could not find a similar image in any search engine. Then I tried to search using the date.
 
