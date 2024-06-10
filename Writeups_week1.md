@@ -466,3 +466,36 @@ a) At which train stations did the person board and alight?
 
 #### Writeup :
 
+When I downloaded the zip.file, the photos and videos were arranged according to there serial numbers. So, I got the sequence in which I had to do my search. So, first I analyzed `IMG_2597.jpg` and it was very easy to locate it. I just put it in the google lens and it showed that the location was ***Chorsu Bazaar,Toshkent,Uzbekistan***. Then I also verified it using the google earth pro and geolocated its coordinates ***41°19'34.63"N 69°14'6.18"E***.
+
+Next one `IMG_2626.jpg`. Again in this one also I had to just put this in the google lens and it showed that the location was ***Anhor Lokomotiv,Toshkent,Uzbekistan***. Next I used google earth pro and using the ***Art cafe shop*** succesfully geolocated approximate coordinates ***41°19'33.87"N 69°15'58.33"E***, from where the actual picture was taken.
+
+ ![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-34.png)
+
+
+Now its turn for `IMG_2658.jpg`. I tried with all the search engines to find some clue but there was nothing. Cropping different parts also didn't work.
+Then I tried to search for the ***Samsung Galaxy*** stores nearby.
+
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-35.png)
+
+But after watching all of them didn't find any correct match. Even tried for searching for bus stop areas but found nothing related.
+
+Also I could not find some good matches for the  image `IMG_2747.jpg`, so moved on to the video.
+
+I first located the railway station which had the coordinates ***41°17'29.60"N 69°17'16.35"E***. Then I searched for the time-table of the trains there and in [this](https://www.advantour.com/uzbekistan/trains/timetable.htm) site found the list of trains in Uzbekistan. Amongst them I included the trains departing from Tashkent at ***06:59 am to 09:00 am*** and from the video it seemed that it was somewhere morning time. 
+
+Then I realized that at this point I should take some hint and went for the video. Then gradually started connecting all the dots. It helped me to find out the location for the third image `IMG_2658.jpg`. By watching the lanes between ***Anhor Lokomotiv*** and the station carefully, I was able to geolocate the coordinates ***41°17'57.31"N 69°16'21.64"E***, where the third image was taken. Then from [suncalc.org](https://www.suncalc.org/#/41.2874,69.5283,10/2024.02.14/07:26/1/3) I got the information about the sunrise in Tashkent in Feb 2024 and it was around ***07:00am***. Also in the third image we could see that it was almost sunrise time. So, I narrowed down my train search timings from ***07:30 to 08:30***. 
+
+![Alt text](https://github.com/tig-paul/CSOC-2024/blob/main/Writeup_files/image-36.png)
+
+There were almost 6-7 trains. Also watching the position of the sun and the shadow in the video we could make a decision that the train could have travelled in the direction east to west using which we could again reject some of the train options. Lastly we have 4 destination options:
+
+1. Samarkand
+2. Navoi
+3. Bukhara
+
+In the last image we could see the bridge and mountains behind it. So, if we start searching for the bridges in all of the 3 options above, we find that the correct one that matches with the image is ***Samarkand Bridge*** and its coordinates are ***39.66576N 66.98024E***.
+
+So, the person boarded from the ***Tashkent station*** and alighted in the ***Samarkand station***.
+
+To solve this question, I had to take a lot of hints from the solution but it was really fun and amazing search.
