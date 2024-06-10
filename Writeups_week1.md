@@ -455,4 +455,14 @@ Next I had to find the exact location of the footage area. I searched in google 
 
 ### <mark> #026
 
-I am trying it and will update ASAP once done.
+[Challenge files](https://gralhix.com/wp-content/uploads/2024/04/osintexercise026.zip)
+
+#### Challenge description :
+
+The image below shows the contents of a zip file. Inside you will find a 31-second video recorded during a train ride, and four photos of undisclosed locations. They were all taken by the same individual in February 2024. Despite having no useful metadata, they still contain enough information to track down this person’s movements.
+Your task is to determine:
+
+a) At which train stations did the person board and alight?
+
+#### Writeup :
+
