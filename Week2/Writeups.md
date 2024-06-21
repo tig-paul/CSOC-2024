@@ -986,3 +986,46 @@ print(flag_bytes)
 Output: b'CSOC23{345y_ba5364_4nd_x0r?}'
 
 And we got the flag **CSOC23{345y_ba5364_4nd_x0r?}**.
+
+## 5. <mark> challenge_2
+
+### Challenge file:
+
+[encoded.txt](https://github.com/JustAnAverageGuy/literate-octo-fiesta/blob/main/challenge_2/encoded.txt)
+
+### Writeup:
+
+The contents of the file are: `01000011 01010011 01001111 01000011 00110010 33 7b 6a 75 35 37 5f ZDFmZjNyM243XzNuYw== 60 144 61 156 66 65 137 154 60 154 175` that is combination of binary, hex, base64 and octal. First I thought that the numbers in the last part were decimal but was unable to decode them. Then using cyberchef I discovered that actually they were octal. Then I made this script:
+
+```py
+#!/usr/bin/env python3
+
+import base64
+
+# Declaring flag
+flag = ''
+
+# Decoding binary strings
+binary_strings = ['01000011', '01010011', '01001111', '01000011', '00110010']
+for b in binary_strings:
+	flag += chr(int(b, 2)) 
+
+# Decoding hexadecimal values
+hex_values = ['33', '7b', '6a', '75', '35', '37', '5f']
+for h in hex_values:
+	flag += chr(int(h, 16))
+
+# Decoding Base64 encoded string
+base64_string = 'ZDFmZjNyM243XzNuYw=='
+flag += base64.b64decode(base64_string).decode('utf-8')
+
+# Decoding octal values
+octal_values = ['60', '144', '61', '156', '66', '65', '137', '154', '60', '154', '175']
+for o in octal_values:
+	flag += chr(int(o, 8))
+
+# Printing the flag
+print(flag)
+```
+
+Output: **CSOC23{ju57_d1ff3r3n7_3nc0d1n65_l0l}**
