@@ -931,4 +931,58 @@
     Output : b'crypto{saltstack_fell_for_this!}'
 
 
-    
+---
+
+
+## 5. <mark> challenge_1
+
+### Challenge files :
+
+[source.enc](https://github.com/JustAnAverageGuy/literate-octo-fiesta/blob/main/challenge_1/source.enc)
+
+[output.txt](https://github.com/JustAnAverageGuy/literate-octo-fiesta/blob/main/challenge_1/output.txt)
+
+### Writeup :
+
+The `source.enc` file contained **base64** encoded data. So I decoded the data from [cyberchef](https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true,false)&input=ZDJsMGFDQnZjR1Z1S0NkbWJHRm5MblI0ZENjc0lDZHlKeWtnWVhNZ1pqb0tJQ0FnSUdac1lXY2dQU0JtTG5KbFlXUW9LUW9LY3lBOUlDY25MbXB2YVc0b1ptOXliV0YwS0c5eVpDaHBLU3dnSnpBeWVDY3BJR1p2Y2lCcElHbHVJR1pzWVdjcENtVWdQU0FpSWdvS1ptOXlJR2tnYVc0Z2NtRnVaMlVvTUN4c1pXNG9jeWtzTkNrNkNpQWdJQ0JsSUNzOUlHWnZjbTFoZENocGJuUW9jMXRwT21rck1sMHNNVFlwWG1sdWRDaHpXMms2YVNzMFhTd3hOaWtzSUNjd01uZ25LUW9LZDJsMGFDQnZjR1Z1S0NkdmRYUndkWFF1ZEhoMEp5d2dKM2NuS1NCaGN5Qm1PZ29nSUNBZ1ppNTNjbWwwWlNobEtRPT0) and found this script:
+
+```py
+with open('flag.txt', 'r') as f:
+    flag = f.read()
+
+s = ''.join(format(ord(i), '02x') for i in flag)
+e = ""
+
+for i in range(0,len(s),4):
+    e += format(int(s[i:i+2],16)^int(s[i:i+4],16), '02x')
+
+with open('output.txt', 'w') as f:
+    f.write(e)
+```
+
+And the file `output.txt` contained hex data. So I made this script to decode it:
+
+```py
+#!/usr/bin/env python3
+
+# Opening the file 'output.txt' in read mode and reading its contents in the variable output
+with open('output.txt','r') as f:
+    output = f.read()
+
+# Declaring flag_hex
+flag_hex = ""
+
+# Performing the same encoding scheme that was used to encode the flag to decode the output and store it in flag_hex
+for i in range(0,len(output),4):
+    flag_hex += format(int(output[i:i+2],16)^int(output[i:i+4],16), '02x')
+
+# Converting the hex data into bytes
+flag_bytes = bytes.fromhex(flag_hex)
+
+# Printing flag_bytes
+print(flag_bytes)
+```
+
+Output: b'CSOC23{345y_ba5364_4nd_x0r?}'
+
+And we got the flag **CSOC23{345y_ba5364_4nd_x0r?}**.
