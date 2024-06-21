@@ -987,7 +987,7 @@ Output: b'CSOC23{345y_ba5364_4nd_x0r?}'
 
 And we got the flag **CSOC23{345y_ba5364_4nd_x0r?}**.
 
-## 5. <mark> challenge_2
+## 6. <mark> challenge_2
 
 ### Challenge file:
 
