@@ -1,0 +1,237 @@
+// VA=0x1000
+void __cdecl _init( void )
+{
+    if( __gmon_start__ != 0 ) {
+        __gmon_start__();
+    }
+}
+
+// VA=0x102c
+void __cdecl func_0x102C( void )
+{
+    goto data_0x3FA0;
+}
+
+// VA=0x103e
+void __cdecl func_0x103E( void )
+{
+    goto data_0x3FA0;
+}
+
+// VA=0x104e
+void __cdecl func_0x104E( void )
+{
+    goto data_0x3FA0;
+}
+
+// VA=0x105e
+void __cdecl func_0x105E( void )
+{
+    goto data_0x3FA0;
+}
+
+// VA=0x106e
+void __cdecl func_0x106E( void )
+{
+    goto data_0x3FA0;
+}
+
+// VA=0x107e
+void __cdecl func_0x107E( void )
+{
+    goto data_0x3FA0;
+}
+
+// VA=0x1090
+void __cdecl __cxa_finalize_2( int64_t p1 )
+{
+    goto __cxa_finalize;
+}
+
+// VA=0x10a0
+int __cdecl puts_2( char * __s )
+{
+    goto puts_1;
+}
+
+// VA=0x10b0
+unsigned long __cdecl strlen_2( char * __s )
+{
+    goto strlen_1;
+}
+
+// VA=0x10c0
+noreturn void __cdecl __stack_chk_fail_2( void )
+{
+    goto __stack_chk_fail_1;
+}
+
+// VA=0x10d0
+int __cdecl printf_2( char * __format, ... )
+{
+    goto printf_1;
+}
+
+// VA=0x10e0
+unsigned long __cdecl strcspn_2( char * __s, char * __reject )
+{
+    goto strcspn_1;
+}
+
+// VA=0x10f0
+char * __cdecl fgets_2( char * __s, int __n, struct _IO_FILE * __stream )
+{
+    goto fgets_1;
+}
+
+// VA=0x1100
+noreturn void __cdecl _start( void )
+{
+    int64_t return_address; // [rsp+0]
+     stack_0x8; // [rsp+8]
+    int64_t rax; // rax
+    int64_t rdx; // rdx
+
+    __libc_start_main( &main, return_address, &stack_0x8, 0, 0, rdx, (&stack_0x8 & 0xFFFFFFFFFFFFFFF0) - 8, rax );
+    __asm.hlt();
+    // Note: Program behavior is undefined if control flow reaches this location.
+}
+
+// VA=0x1130
+void __cdecl deregister_tm_clones( void )
+{
+}
+
+// VA=0x1160
+void __cdecl register_tm_clones( void )
+{
+}
+
+// VA=0x11a0
+void __cdecl __do_global_dtors_aux( void )
+{
+    if( completed.0 == 0 ) {
+        if( __cxa_finalize != 0 ) {
+            __cxa_finalize_2( __dso_handle );
+        }
+        deregister_tm_clones();
+        completed.0 = 1;
+        return;
+    }
+}
+
+// VA=0x11e9
+int32_t __cdecl main( void )
+{
+    uint64_t local_0x118; // [rsp-280]
+    uint64_t local_0x10; // [rsp-16]
+    void * fs; // fs
+    unsigned long v1; // rax
+    int32_t v2; // rax
+
+    local_0x10 = *((uint8_t *)fs + 40);
+    printf_2( "What is the password:" );
+    fgets_2( &local_0x118, 256, stdin );
+    v1 = strcspn_2( &local_0x118, &data_0x201A );
+    *(&local_0x118 + v1) = 0;
+    v2 = check( &local_0x118 );
+    if( v2 == 1 ) {
+        puts_2( "Correct" );
+    } else {
+        puts_2( "Incorrect" );
+    }
+    if( *((uint8_t *)fs + 40) != local_0x10 ) {
+        __stack_chk_fail_2();
+        // Note: Program behavior is undefined if control flow reaches this location.
+        return;
+    }
+    return 0;
+}
+
+// VA=0x12a6
+int32_t __cdecl check( int64_t p1 )
+{
+    unsigned long v1; // rax
+    int32_t v2; // rax
+
+    v1 = strlen_2( p1 );
+    if( v1 == 10 && *p1 == 49 && *(p1 + 4) == 57 ) {
+        v2 = 1;
+    } else {
+        v2 = 0;
+    }
+    return v2;
+}
+
+// VA=0x12f4
+inline void __cdecl _fini( void )
+{
+}
+
+// VA=0x4020
+void __unknown __libc_start_main_1( void )
+{
+    goto &__libc_start_main_1;
+}
+
+// VA=0x4028
+void __unknown _ITM_deregisterTMCloneTable_1( void )
+{
+    goto &_ITM_deregisterTMCloneTable_1;
+}
+
+// VA=0x4030
+void __unknown __gmon_start___1( void )
+{
+    goto &__gmon_start___1;
+}
+
+// VA=0x4038
+void __unknown _ITM_registerTMCloneTable_1( void )
+{
+    goto &_ITM_registerTMCloneTable_1;
+}
+
+// VA=0x4040
+void __unknown __cxa_finalize_1( void )
+{
+    goto &__cxa_finalize_1;
+}
+
+// VA=0x4048
+int __cdecl puts( char * __s )
+{
+    goto &puts;
+}
+
+// VA=0x4050
+unsigned long __cdecl strlen( char * __s )
+{
+    goto &strlen;
+}
+
+// VA=0x4058
+noreturn void __cdecl __stack_chk_fail( void )
+{
+    goto &__stack_chk_fail;
+}
+
+// VA=0x4060
+int __cdecl printf( char * __format, ... )
+{
+    goto &printf;
+}
+
+// VA=0x4068
+unsigned long __cdecl strcspn( char * __s, char * __reject )
+{
+    goto &strcspn;
+}
+
+// VA=0x4070
+char * __cdecl fgets( char * __s, int __n, struct _IO_FILE * __stream )
+{
+    goto &fgets;
+}
+
+
