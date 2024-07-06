@@ -1,0 +1,814 @@
+#include "out.h"
+
+
+
+int _init(EVP_PKEY_CTX *ctx)
+
+{
+  int iVar1;
+  
+  iVar1 = __gmon_start__();
+  return iVar1;
+}
+
+
+
+void FUN_00101020(void)
+
+{
+  (*(code *)(undefined *)0x0)();
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+basic_istream *
+std::getline<char,std::char_traits<char>,std::allocator<char>>
+          (basic_istream *param_1,basic_string *param_2)
+
+{
+  basic_istream *pbVar1;
+  
+  pbVar1 = getline<char,std::char_traits<char>,std::allocator<char>>(param_1,param_2);
+  return pbVar1;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string
+               (basic_string *param_1)
+
+{
+  basic_string(param_1);
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+int memcmp(void *__s1,void *__s2,size_t __n)
+
+{
+  int iVar1;
+  
+  iVar1 = memcmp(__s1,__s2,__n);
+  return iVar1;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::end(void)
+
+{
+  end();
+  return;
+}
+
+
+
+void __thiscall
+std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::~basic_string
+          (basic_string<char,std::char_traits<char>,std::allocator<char>> *this)
+
+{
+  ~basic_string(this);
+  return;
+}
+
+
+
+void __thiscall
+std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::operator+=
+          (basic_string<char,std::char_traits<char>,std::allocator<char>> *this,char param_1)
+
+{
+  operator+=(this,param_1);
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::size(void)
+
+{
+  size();
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::begin(void)
+
+{
+  begin();
+  return;
+}
+
+
+
+void __cxa_atexit(void)
+
+{
+  __cxa_atexit();
+  return;
+}
+
+
+
+void __thiscall
+std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::operator+=
+          (basic_string<char,std::char_traits<char>,std::allocator<char>> *this,char *param_1)
+
+{
+  operator+=(this,param_1);
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+basic_ostream * std::operator<<(basic_ostream *param_1,char *param_2)
+
+{
+  basic_ostream *pbVar1;
+  
+  pbVar1 = operator<<(param_1,param_2);
+  return pbVar1;
+}
+
+
+
+void __thiscall
+std::basic_ostream<char,std::char_traits<char>>::operator<<
+          (basic_ostream<char,std::char_traits<char>> *this,
+          _func_basic_ostream_ptr_basic_ostream_ptr *param_1)
+
+{
+  operator<<(this,param_1);
+  return;
+}
+
+
+
+void __thiscall std::allocator<char>::~allocator(allocator<char> *this)
+
+{
+  ~allocator(this);
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::data(void)
+
+{
+  data();
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string
+               (char *param_1,allocator *param_2)
+
+{
+  basic_string(param_1,param_2);
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string
+               (void)
+
+{
+  basic_string();
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::length(void)
+
+{
+  length();
+  return;
+}
+
+
+
+void __thiscall std::ios_base::Init::Init(Init *this)
+
+{
+  Init(this);
+  return;
+}
+
+
+
+void _Unwind_Resume(void)
+
+{
+                    // WARNING: Subroutine does not return
+  _Unwind_Resume();
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::allocator<char>::allocator(void)
+
+{
+  allocator();
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::at(ulong param_1)
+
+{
+  at(param_1);
+  return;
+}
+
+
+
+void __cxa_finalize(void)
+
+{
+  __cxa_finalize();
+  return;
+}
+
+
+
+void processEntry _start(undefined8 param_1,undefined8 param_2)
+
+{
+  undefined auStack_8 [8];
+  
+  __libc_start_main(main,param_2,&stack0x00000008,__libc_csu_init,__libc_csu_fini,param_1,auStack_8)
+  ;
+  do {
+                    // WARNING: Do nothing block with infinite loop
+  } while( true );
+}
+
+
+
+// WARNING: Removing unreachable block (ram,0x001011d3)
+// WARNING: Removing unreachable block (ram,0x001011df)
+
+void deregister_tm_clones(void)
+
+{
+  return;
+}
+
+
+
+// WARNING: Removing unreachable block (ram,0x00101214)
+// WARNING: Removing unreachable block (ram,0x00101220)
+
+void register_tm_clones(void)
+
+{
+  return;
+}
+
+
+
+void __do_global_dtors_aux(void)
+
+{
+  if (completed_7389 != '\0') {
+    return;
+  }
+  __cxa_finalize(__dso_handle);
+  deregister_tm_clones();
+  completed_7389 = 1;
+  return;
+}
+
+
+
+// WARNING: Removing unreachable block (ram,0x00101214)
+// WARNING: Removing unreachable block (ram,0x00101220)
+
+void frame_dummy(void)
+
+{
+  return;
+}
+
+
+
+// checkPassword(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+
+undefined4 checkPassword(basic_string param_1)
+
+{
+  __normal_iterator _Var1;
+  __normal_iterator _Var2;
+  __type _Var3;
+  long lVar4;
+  char *pcVar5;
+  undefined4 in_register_0000003c;
+  undefined4 unaff_R12D;
+  bool bVar6;
+  basic_string local_68 [8];
+  basic_string<char,std::char_traits<char>,std::allocator<char>> local_48 [35];
+  allocator<char> local_25;
+  int local_24;
+  int local_20;
+  int local_1c;
+  
+  std::allocator<char>::allocator();
+                    // try { // try from 001012a2 to 001012a6 has its CatchHandler @ 001013df
+  std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string
+            ((char *)local_48,(allocator *)&DAT_00102005);
+  std::allocator<char>::~allocator(&local_25);
+  local_20 = -7;
+  local_24 = std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::length();
+  lVar4 = std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::length();
+  if (lVar4 == -local_20) {
+    std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string();
+    for (local_1c = 0; local_1c < local_24; local_1c = local_1c + 1) {
+      if (local_1c == local_24 + -1) {
+                    // try { // try from 00101321 to 0010138d has its CatchHandler @ 001013f9
+        std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::operator+=
+                  ((basic_string<char,std::char_traits<char>,std::allocator<char>> *)local_68,"k");
+        std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::operator+=
+                  ((basic_string<char,std::char_traits<char>,std::allocator<char>> *)local_68,"car")
+        ;
+      }
+      pcVar5 = (char *)std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>
+                       ::at((ulong)local_48);
+      std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::operator+=
+                ((basic_string<char,std::char_traits<char>,std::allocator<char>> *)local_68,*pcVar5)
+      ;
+    }
+    _Var1 = std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::end();
+    _Var2 = std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::begin();
+    std::
+    reverse<__gnu_cxx::__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>
+              (_Var2,_Var1);
+    _Var3 = std::operator==((basic_string *)CONCAT44(in_register_0000003c,param_1),local_68);
+    bVar6 = (char)_Var3 != '\0';
+    if (bVar6) {
+      unaff_R12D = 1;
+    }
+    std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::~basic_string
+              ((basic_string<char,std::char_traits<char>,std::allocator<char>> *)local_68);
+    if (bVar6) goto LAB_001013ce;
+  }
+  unaff_R12D = 0;
+LAB_001013ce:
+  std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::~basic_string
+            (local_48);
+  return unaff_R12D;
+}
+
+
+
+undefined8 main(void)
+
+{
+  char cVar1;
+  basic_ostream *pbVar2;
+  char *pcVar3;
+  basic_string local_58 [8];
+  basic_string local_38 [10];
+  
+  std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string();
+                    // try { // try from 0010144b to 0010148a has its CatchHandler @ 00101501
+  pbVar2 = std::operator<<((basic_ostream *)std::cout,"Enter the password:");
+  std::basic_ostream<char,std::char_traits<char>>::operator<<
+            ((basic_ostream<char,std::char_traits<char>> *)pbVar2,
+             std::endl<char,std::char_traits<char>>);
+  std::getline<char,std::char_traits<char>,std::allocator<char>>((basic_istream *)std::cin,local_58)
+  ;
+  std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string
+            (local_38);
+                    // try { // try from 00101492 to 001014ce has its CatchHandler @ 001014f0
+  cVar1 = checkPassword((basic_string)local_38);
+  if (cVar1 == '\0') {
+    pcVar3 = "Login failed";
+  }
+  else {
+    pcVar3 = "Login successful";
+  }
+  pbVar2 = std::operator<<((basic_ostream *)std::cout,pcVar3);
+  std::basic_ostream<char,std::char_traits<char>>::operator<<
+            ((basic_ostream<char,std::char_traits<char>> *)pbVar2,
+             std::endl<char,std::char_traits<char>>);
+  std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::~basic_string
+            ((basic_string<char,std::char_traits<char>,std::allocator<char>> *)local_38);
+  std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::~basic_string
+            ((basic_string<char,std::char_traits<char>,std::allocator<char>> *)local_58);
+  return 0;
+}
+
+
+
+// __static_initialization_and_destruction_0(int, int)
+
+void __static_initialization_and_destruction_0(int param_1,int param_2)
+
+{
+  if ((param_1 == 1) && (param_2 == 0xffff)) {
+    std::ios_base::Init::Init((Init *)&std::__ioinit);
+    __cxa_atexit(std::ios_base::Init::~Init,&std::__ioinit,&__dso_handle);
+  }
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+// checkPassword(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+
+void _GLOBAL__sub_I_checkPassword(void)
+
+{
+  __static_initialization_and_destruction_0(1,0xffff);
+  return;
+}
+
+
+
+// std::char_traits<char>::compare(char const*, char const*, unsigned long)
+
+int std::char_traits<char>::compare(char *param_1,char *param_2,ulong param_3)
+
+{
+  int iVar1;
+  
+  if (param_3 == 0) {
+    iVar1 = 0;
+  }
+  else {
+    iVar1 = memcmp(param_1,param_2,param_3);
+  }
+  return iVar1;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+// void std::reverse<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char,
+// std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*,
+// std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >,
+// __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>,
+// std::allocator<char> > >)
+
+void std::
+     reverse<__gnu_cxx::__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>
+               (__normal_iterator param_1,__normal_iterator param_2)
+
+{
+  undefined4 in_register_0000003c;
+  undefined8 local_20 [3];
+  
+  local_20[0] = CONCAT44(in_register_0000003c,param_1);
+  __iterator_category<__gnu_cxx::__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>
+            ((__normal_iterator *)local_20);
+  __reverse<__gnu_cxx::__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>
+            ((__normal_iterator)local_20[0],param_2,param_2);
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+// __gnu_cxx::__enable_if<std::__is_char<char>::__value, bool>::__type
+// std::TEMPNAMEPLACEHOLDERVALUE(std::__cxx11::basic_string<char, std::char_traits<char>,
+// std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>,
+// std::allocator<char> > const&)
+
+__type std::operator==(basic_string *param_1,basic_string *param_2)
+
+{
+  int iVar1;
+  long lVar2;
+  long lVar3;
+  ulong uVar4;
+  char *pcVar5;
+  char *pcVar6;
+  
+  lVar2 = std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::size();
+  lVar3 = std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::size();
+  if (lVar2 == lVar3) {
+    uVar4 = std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::size();
+    pcVar5 = (char *)std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::
+                     data();
+    pcVar6 = (char *)std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::
+                     data();
+    iVar1 = char_traits<char>::compare(pcVar6,pcVar5,uVar4);
+    if (iVar1 == 0) {
+      return 1;
+    }
+  }
+  return 0;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+// std::iterator_traits<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char,
+// std::char_traits<char>, std::allocator<char> > > >::iterator_category
+// std::__iterator_category<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char,
+// std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*,
+// std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&)
+
+iterator_category
+std::
+__iterator_category<__gnu_cxx::__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>
+          (__normal_iterator *param_1)
+
+{
+  iterator_category in_EAX;
+  
+  return in_EAX;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+// void std::__reverse<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char,
+// std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*,
+// std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >,
+// __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>,
+// std::allocator<char> > >, std::random_access_iterator_tag)
+
+void std::
+     __reverse<__gnu_cxx::__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>
+               (__normal_iterator param_1,__normal_iterator param_2,
+               random_access_iterator_tag param_3)
+
+{
+  bool bVar1;
+  undefined4 in_register_00000034;
+  undefined4 in_register_0000003c;
+  undefined8 local_18;
+  undefined8 local_10;
+  
+  local_10 = CONCAT44(in_register_0000003c,param_1);
+  local_18 = CONCAT44(in_register_00000034,param_2);
+  bVar1 = __gnu_cxx::operator==((__normal_iterator *)&local_10,(__normal_iterator *)&local_18);
+  if (!bVar1) {
+    __gnu_cxx::
+    __normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>
+    ::operator--((__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>
+                  *)&local_18);
+    while( true ) {
+      bVar1 = __gnu_cxx::operator<((__normal_iterator *)&local_10,(__normal_iterator *)&local_18);
+      if (!bVar1) break;
+      iter_swap<__gnu_cxx::__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,__gnu_cxx::__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>
+                ((__normal_iterator)local_10,(__normal_iterator)local_18);
+      __gnu_cxx::
+      __normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>
+      ::operator++((__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>
+                    *)&local_10);
+      __gnu_cxx::
+      __normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>
+      ::operator--((__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>
+                    *)&local_18);
+    }
+  }
+  return;
+}
+
+
+
+// bool __gnu_cxx::TEMPNAMEPLACEHOLDERVALUE(__gnu_cxx::__normal_iterator<char*,
+// std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&,
+// __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>,
+// std::allocator<char> > > const&)
+
+bool __gnu_cxx::operator==(__normal_iterator *param_1,__normal_iterator *param_2)
+
+{
+  long lVar1;
+  long *plVar2;
+  
+  plVar2 = (long *)__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>
+                   ::base();
+  lVar1 = *plVar2;
+  plVar2 = (long *)__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>
+                   ::base();
+  return lVar1 == *plVar2;
+}
+
+
+
+// __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>,
+// std::allocator<char> > >::TEMPNAMEPLACEHOLDERVALUE()
+
+__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>
+* __thiscall
+__gnu_cxx::
+__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>
+::operator--(__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>
+             *this)
+
+{
+  *(long *)this = *(long *)this + -1;
+  return this;
+}
+
+
+
+// bool __gnu_cxx::TEMPNAMEPLACEHOLDERVALUE(__gnu_cxx::__normal_iterator<char*,
+// std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&,
+// __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>,
+// std::allocator<char> > > const&)
+
+bool __gnu_cxx::operator<(__normal_iterator *param_1,__normal_iterator *param_2)
+
+{
+  ulong uVar1;
+  ulong *puVar2;
+  
+  puVar2 = (ulong *)__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>
+                    ::base();
+  uVar1 = *puVar2;
+  puVar2 = (ulong *)__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>
+                    ::base();
+  return uVar1 < *puVar2;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+// void std::iter_swap<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char,
+// std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*,
+// std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >
+// >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>,
+// std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char,
+// std::char_traits<char>, std::allocator<char> > >)
+
+void std::
+     iter_swap<__gnu_cxx::__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,__gnu_cxx::__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>
+               (__normal_iterator param_1,__normal_iterator param_2)
+
+{
+  char *pcVar1;
+  char *pcVar2;
+  undefined4 in_register_00000034;
+  undefined4 in_register_0000003c;
+  undefined8 local_28;
+  undefined8 local_20 [2];
+  
+  local_20[0] = CONCAT44(in_register_0000003c,param_1);
+  local_28 = CONCAT44(in_register_00000034,param_2);
+  pcVar1 = (char *)__gnu_cxx::
+                   __normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>
+                   ::operator*((__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>
+                                *)&local_28);
+  pcVar2 = (char *)__gnu_cxx::
+                   __normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>
+                   ::operator*((__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>
+                                *)local_20);
+  swap<char>(pcVar2,pcVar1);
+  return;
+}
+
+
+
+// __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>,
+// std::allocator<char> > >::TEMPNAMEPLACEHOLDERVALUE()
+
+__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>
+* __thiscall
+__gnu_cxx::
+__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>
+::operator++(__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>
+             *this)
+
+{
+  *(long *)this = *(long *)this + 1;
+  return this;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+// __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>,
+// std::allocator<char> > >::base() const
+
+undefined8
+__gnu_cxx::
+__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>
+::base(void)
+
+{
+  undefined8 in_RDI;
+  
+  return in_RDI;
+}
+
+
+
+// __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>,
+// std::allocator<char> > >::TEMPNAMEPLACEHOLDERVALUE() const
+
+undefined8 __thiscall
+__gnu_cxx::
+__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>
+::operator*(__normal_iterator<char*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>
+            *this)
+
+{
+  return *(undefined8 *)this;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+// std::remove_reference<char&>::type&& std::move<char&>(char&)
+
+type * std::move<char&>(char *param_1)
+
+{
+  return (type *)param_1;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+// std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<char> >,
+// std::is_move_constructible<char>, std::is_move_assignable<char> >::value, void>::type
+// std::swap<char>(char&, char&)
+
+type std::swap<char>(char *param_1,char *param_2)
+
+{
+  type *ptVar1;
+  type local_9;
+  
+  ptVar1 = move<char&>(param_1);
+  local_9 = *ptVar1;
+  ptVar1 = move<char&>(param_2);
+  *param_1 = (char)*ptVar1;
+  ptVar1 = move<char&>((char *)&local_9);
+  *param_2 = (char)*ptVar1;
+  return (type)param_2;
+}
+
+
+
+void __libc_csu_init(EVP_PKEY_CTX *param_1,undefined8 param_2,undefined8 param_3)
+
+{
+  long lVar1;
+  
+  _init(param_1);
+  lVar1 = 0;
+  do {
+    (*(code *)(&__frame_dummy_init_array_entry)[lVar1])((ulong)param_1 & 0xffffffff,param_2,param_3)
+    ;
+    lVar1 = lVar1 + 1;
+  } while (lVar1 != 2);
+  return;
+}
+
+
+
+void __libc_csu_fini(void)
+
+{
+  return;
+}
+
+
+
+void _fini(void)
+
+{
+  return;
+}
