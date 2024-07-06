@@ -1,0 +1,446 @@
+#include <defs.h>
+
+
+//-------------------------------------------------------------------------
+// Function declarations
+
+__int64 (**init_proc())(void);
+void sub_1020();
+// __int64 __fastcall std::getline<char,std::char_traits<char>,std::allocator<char>>(_QWORD, _QWORD); weak
+// __int64 __fastcall std::string::basic_string(_QWORD, _QWORD); weak
+// int memcmp(const void *s1, const void *s2, size_t n);
+// __int64 __fastcall std::string::end(_QWORD); weak
+// __int64 __fastcall std::string::~string(_QWORD); weak
+// __int64 __fastcall std::string::operator+=(_QWORD, _QWORD); weak
+// __int64 __fastcall std::string::size(_QWORD); weak
+// __int64 __fastcall std::string::begin(_QWORD); weak
+// int __fastcall __cxa_atexit(void (__fastcall *lpfunc)(void *), void *obj, void *lpdso_handle);
+// __int64 __fastcall std::string::operator+=(_QWORD, _QWORD); weak
+// __int64 __fastcall std::operator<<<std::char_traits<char>>(_QWORD, _QWORD); weak
+// __int64 __fastcall std::ostream::operator<<(_QWORD, _QWORD); weak
+// __int64 __fastcall std::allocator<char>::~allocator(_QWORD); weak
+// __int64 __fastcall std::string::data(_QWORD); weak
+// __int64 __fastcall std::string::basic_string(_QWORD, _QWORD, _QWORD); weak
+// __int64 __fastcall std::string::basic_string(_QWORD); weak
+// __int64 __fastcall std::string::length(_QWORD); weak
+// _QWORD std::ios_base::Init::Init(std::ios_base::Init *__hidden this); idb
+// __int64 __fastcall std::allocator<char>::allocator(_QWORD); weak
+// __int64 __fastcall std::string::at(_QWORD, _QWORD); weak
+// int __fastcall _cxa_finalize(void *);
+void __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void));
+void *deregister_tm_clones();
+__int64 register_tm_clones(); // weak
+void *_do_global_dtors_aux();
+__int64 __fastcall frame_dummy(_QWORD, _QWORD, _QWORD); // weak
+__int64 __fastcall checkPassword(__int64 a1);
+int __fastcall main(int argc, const char **argv, const char **envp);
+int __fastcall __static_initialization_and_destruction_0(int a1, int a2);
+int GLOBAL__sub_I__Z13checkPasswordNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE();
+int __fastcall std::char_traits<char>::compare(const void *a1, const void *a2, size_t a3);
+bool __fastcall std::reverse<__gnu_cxx::__normal_iterator<char *,std::string>>(__int64 a1, __int64 a2);
+_BOOL8 __fastcall std::operator==<char>(__int64 a1, __int64 a2);
+void std::__iterator_category<__gnu_cxx::__normal_iterator<char *,std::string>>();
+bool __fastcall std::__reverse<__gnu_cxx::__normal_iterator<char *,std::string>>(__int64 a1, __int64 a2);
+bool __fastcall __gnu_cxx::operator==<char *,std::string>(__int64 a1, __int64 a2);
+_QWORD *__fastcall __gnu_cxx::__normal_iterator<char *,std::string>::operator--(_QWORD *a1);
+bool __fastcall __gnu_cxx::operator<<char *,std::string>(__int64 a1, __int64 a2);
+_BYTE *__fastcall std::iter_swap<__gnu_cxx::__normal_iterator<char *,std::string>,__gnu_cxx::__normal_iterator<char *,std::string>>(__int64 a1, __int64 a2);
+_QWORD *__fastcall __gnu_cxx::__normal_iterator<char *,std::string>::operator++(_QWORD *a1);
+__int64 __fastcall __gnu_cxx::__normal_iterator<char *,std::string>::base(__int64 a1);
+__int64 __fastcall __gnu_cxx::__normal_iterator<char *,std::string>::operator*(__int64 a1);
+__int64 __fastcall std::move<char &>(__int64 a1);
+_BYTE *__fastcall std::swap<char>(_BYTE *a1, _BYTE *a2);
+void _libc_csu_fini(void); // idb
+void term_proc();
+// int __fastcall _libc_start_main(int (__fastcall *main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end);
+// void __fastcall std::ios_base::Init::~Init(std::ios_base::Init *__hidden this); idb
+// int __fastcall __cxa_finalize(void *);
+// __int64 _gmon_start__(void); weak
+
+//-------------------------------------------------------------------------
+// Data declarations
+
+_UNKNOWN _libc_csu_init;
+_UNKNOWN unk_2005; // weak
+_UNKNOWN unk_2009; // weak
+_UNKNOWN unk_200B; // weak
+__int64 (__fastcall *_frame_dummy_init_array_entry)() = &frame_dummy; // weak
+__int64 (__fastcall *_do_global_dtors_aux_fini_array_entry)() = &_do_global_dtors_aux; // weak
+void *_dso_handle = &_dso_handle; // idb
+_UNKNOWN _bss_start; // weak
+_UNKNOWN std::cout; // weak
+_UNKNOWN std::cin; // weak
+char completed_7389; // weak
+_UNKNOWN std::__ioinit; // weak
+// extern _UNKNOWN std::endl<char,std::char_traits<char>>; weak
+
+
+//----- (0000000000001000) ----------------------------------------------------
+__int64 (**init_proc())(void)
+{
+  __int64 (**result)(void); // rax
+
+  result = &_gmon_start__;
+  if ( &_gmon_start__ )
+    return (__int64 (**)(void))_gmon_start__();
+  return result;
+}
+// 4400: using guessed type __int64 _gmon_start__(void);
+
+//----- (0000000000001020) ----------------------------------------------------
+void sub_1020()
+{
+  JUMPOUT(0LL);
+}
+// 1026: control flows out of bounds to 0
+
+//----- (0000000000001190) ----------------------------------------------------
+// positive sp value has been detected, the output may be wrong!
+void __fastcall __noreturn start(__int64 a1, __int64 a2, void (*a3)(void))
+{
+  __int64 v3; // rax
+  int v4; // esi
+  __int64 v5; // [rsp-8h] [rbp-8h] BYREF
+  char *retaddr; // [rsp+0h] [rbp+0h] BYREF
+
+  v4 = v5;
+  v5 = v3;
+  _libc_start_main(
+    (int (__fastcall *)(int, char **, char **))main,
+    v4,
+    &retaddr,
+    (void (*)(void))_libc_csu_init,
+    _libc_csu_fini,
+    a3,
+    &v5);
+  __halt();
+}
+// 1196: positive sp value 8 has been found
+// 119D: variable 'v3' is possibly undefined
+
+//----- (00000000000011C0) ----------------------------------------------------
+void *deregister_tm_clones()
+{
+  return &_bss_start;
+}
+
+//----- (00000000000011F0) ----------------------------------------------------
+__int64 register_tm_clones()
+{
+  return 0LL;
+}
+// 11F0: using guessed type __int64 register_tm_clones();
+
+//----- (0000000000001230) ----------------------------------------------------
+void *_do_global_dtors_aux()
+{
+  void *result; // rax
+
+  if ( !completed_7389 )
+  {
+    if ( &__cxa_finalize )
+      _cxa_finalize(_dso_handle);
+    result = deregister_tm_clones();
+    completed_7389 = 1;
+  }
+  return result;
+}
+// 4318: using guessed type char completed_7389;
+
+//----- (0000000000001275) ----------------------------------------------------
+__int64 __fastcall checkPassword(__int64 a1)
+{
+  unsigned int v1; // r12d
+  __int64 v2; // rdx
+  char *v3; // rax
+  __int64 v4; // rbx
+  __int64 v5; // rax
+  int v6; // ebx
+  char v8[32]; // [rsp+10h] [rbp-60h] BYREF
+  char v9[35]; // [rsp+30h] [rbp-40h] BYREF
+  char v10; // [rsp+53h] [rbp-1Dh] BYREF
+  int v11; // [rsp+54h] [rbp-1Ch]
+  int v12; // [rsp+58h] [rbp-18h]
+  int i; // [rsp+5Ch] [rbp-14h]
+
+  std::allocator<char>::allocator(&v10);
+  std::string::basic_string(v9, &unk_2005, &v10);
+  std::allocator<char>::~allocator(&v10);
+  v12 = -7;
+  v11 = std::string::length(v9);
+  v2 = std::string::length(a1);
+  if ( v2 != -v12 )
+    goto LABEL_11;
+  std::string::basic_string(v8);
+  for ( i = 0; i < v11; ++i )
+  {
+    if ( i == v11 - 1 )
+    {
+      std::string::operator+=(v8, &unk_2009);
+      std::string::operator+=(v8, &unk_200B);
+    }
+    v3 = (char *)std::string::at(v9, i);
+    std::string::operator+=(v8, (unsigned int)*v3);
+  }
+  v4 = std::string::end(a1);
+  v5 = std::string::begin(a1);
+  std::reverse<__gnu_cxx::__normal_iterator<char *,std::string>>(v5, v4);
+  if ( std::operator==<char>(a1, (__int64)v8) )
+  {
+    v1 = 1;
+    v6 = 0;
+  }
+  else
+  {
+    v6 = 1;
+  }
+  std::string::~string(v8);
+  if ( v6 == 1 )
+LABEL_11:
+    v1 = 0;
+  std::string::~string(v9);
+  return v1;
+}
+// 13DA: variable 'v1' is possibly undefined
+// 1060: using guessed type __int64 __fastcall std::string::end(_QWORD);
+// 1070: using guessed type __int64 __fastcall std::string::~string(_QWORD);
+// 1080: using guessed type __int64 __fastcall std::string::operator+=(_QWORD, _QWORD);
+// 10A0: using guessed type __int64 __fastcall std::string::begin(_QWORD);
+// 10C0: using guessed type __int64 __fastcall std::string::operator+=(_QWORD, _QWORD);
+// 10F0: using guessed type __int64 __fastcall std::allocator<char>::~allocator(_QWORD);
+// 1110: using guessed type __int64 __fastcall std::string::basic_string(_QWORD, _QWORD, _QWORD);
+// 1120: using guessed type __int64 __fastcall std::string::basic_string(_QWORD);
+// 1130: using guessed type __int64 __fastcall std::string::length(_QWORD);
+// 1160: using guessed type __int64 __fastcall std::allocator<char>::allocator(_QWORD);
+// 1170: using guessed type __int64 __fastcall std::string::at(_QWORD, _QWORD);
+
+//----- (0000000000001428) ----------------------------------------------------
+int __fastcall main(int argc, const char **argv, const char **envp)
+{
+  __int64 v3; // rax
+  const char *v4; // rax
+  __int64 v5; // rax
+  char v7[32]; // [rsp+0h] [rbp-50h] BYREF
+  char v8[48]; // [rsp+20h] [rbp-30h] BYREF
+
+  std::string::basic_string(v7);
+  v3 = std::operator<<<std::char_traits<char>>(&std::cout, "Enter the password:");
+  std::ostream::operator<<(v3, &std::endl<char,std::char_traits<char>>);
+  std::getline<char,std::char_traits<char>,std::allocator<char>>(&std::cin, v7);
+  std::string::basic_string(v8, v7);
+  if ( (unsigned __int8)checkPassword((__int64)v8) )
+    v4 = "Login successful";
+  else
+    v4 = "Login failed";
+  v5 = std::operator<<<std::char_traits<char>>(&std::cout, v4);
+  std::ostream::operator<<(v5, &std::endl<char,std::char_traits<char>>);
+  std::string::~string(v8);
+  std::string::~string(v7);
+  return 0;
+}
+// 1030: using guessed type __int64 __fastcall std::getline<char,std::char_traits<char>,std::allocator<char>>(_QWORD, _QWORD);
+// 1040: using guessed type __int64 __fastcall std::string::basic_string(_QWORD, _QWORD);
+// 1070: using guessed type __int64 __fastcall std::string::~string(_QWORD);
+// 10D0: using guessed type __int64 __fastcall std::operator<<<std::char_traits<char>>(_QWORD, _QWORD);
+// 10E0: using guessed type __int64 __fastcall std::ostream::operator<<(_QWORD, _QWORD);
+// 1120: using guessed type __int64 __fastcall std::string::basic_string(_QWORD);
+
+//----- (0000000000001522) ----------------------------------------------------
+int __fastcall __static_initialization_and_destruction_0(int a1, int a2)
+{
+  int result; // eax
+
+  if ( a1 == 1 && a2 == 0xFFFF )
+  {
+    std::ios_base::Init::Init((std::ios_base::Init *)&std::__ioinit);
+    return __cxa_atexit((void (__fastcall *)(void *))&std::ios_base::Init::~Init, &std::__ioinit, &_dso_handle);
+  }
+  return result;
+}
+
+//----- (000000000000156B) ----------------------------------------------------
+int GLOBAL__sub_I__Z13checkPasswordNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE()
+{
+  return __static_initialization_and_destruction_0(1, 0xFFFF);
+}
+
+//----- (0000000000001580) ----------------------------------------------------
+int __fastcall std::char_traits<char>::compare(const void *a1, const void *a2, size_t a3)
+{
+  if ( a3 )
+    return memcmp(a1, a2, a3);
+  else
+    return 0;
+}
+
+//----- (00000000000015BC) ----------------------------------------------------
+bool __fastcall std::reverse<__gnu_cxx::__normal_iterator<char *,std::string>>(__int64 a1, __int64 a2)
+{
+  std::__iterator_category<__gnu_cxx::__normal_iterator<char *,std::string>>();
+  return std::__reverse<__gnu_cxx::__normal_iterator<char *,std::string>>(a1, a2);
+}
+
+//----- (00000000000015EE) ----------------------------------------------------
+_BOOL8 __fastcall std::operator==<char>(__int64 a1, __int64 a2)
+{
+  __int64 v2; // rbx
+  size_t v3; // r12
+  const void *v4; // rbx
+  const void *v5; // rax
+  _BOOL8 result; // rax
+
+  v2 = std::string::size(a1);
+  result = 0;
+  if ( v2 == std::string::size(a2) )
+  {
+    v3 = std::string::size(a1);
+    v4 = (const void *)std::string::data(a2);
+    v5 = (const void *)std::string::data(a1);
+    if ( !std::char_traits<char>::compare(v5, v4, v3) )
+      return 1;
+  }
+  return result;
+}
+// 1090: using guessed type __int64 __fastcall std::string::size(_QWORD);
+// 1100: using guessed type __int64 __fastcall std::string::data(_QWORD);
+
+//----- (0000000000001672) ----------------------------------------------------
+void std::__iterator_category<__gnu_cxx::__normal_iterator<char *,std::string>>()
+{
+  ;
+}
+
+//----- (000000000000167C) ----------------------------------------------------
+bool __fastcall std::__reverse<__gnu_cxx::__normal_iterator<char *,std::string>>(__int64 a1, __int64 a2)
+{
+  bool result; // al
+  __int64 v3; // [rsp+0h] [rbp-10h] BYREF
+  __int64 v4; // [rsp+8h] [rbp-8h] BYREF
+
+  v4 = a1;
+  v3 = a2;
+  result = __gnu_cxx::operator==<char *,std::string>((__int64)&v4, (__int64)&v3);
+  if ( !result )
+  {
+    __gnu_cxx::__normal_iterator<char *,std::string>::operator--(&v3);
+    while ( 1 )
+    {
+      result = __gnu_cxx::operator<<char *,std::string>((__int64)&v4, (__int64)&v3);
+      if ( !result )
+        break;
+      std::iter_swap<__gnu_cxx::__normal_iterator<char *,std::string>,__gnu_cxx::__normal_iterator<char *,std::string>>(
+        v4,
+        v3);
+      __gnu_cxx::__normal_iterator<char *,std::string>::operator++(&v4);
+      __gnu_cxx::__normal_iterator<char *,std::string>::operator--(&v3);
+    }
+  }
+  return result;
+}
+
+//----- (00000000000016F6) ----------------------------------------------------
+bool __fastcall __gnu_cxx::operator==<char *,std::string>(__int64 a1, __int64 a2)
+{
+  __int64 v2; // rbx
+
+  v2 = *(_QWORD *)__gnu_cxx::__normal_iterator<char *,std::string>::base(a1);
+  return v2 == *(_QWORD *)__gnu_cxx::__normal_iterator<char *,std::string>::base(a2);
+}
+
+//----- (0000000000001732) ----------------------------------------------------
+_QWORD *__fastcall __gnu_cxx::__normal_iterator<char *,std::string>::operator--(_QWORD *a1)
+{
+  --*a1;
+  return a1;
+}
+
+//----- (0000000000001752) ----------------------------------------------------
+bool __fastcall __gnu_cxx::operator<<char *,std::string>(__int64 a1, __int64 a2)
+{
+  unsigned __int64 v2; // rbx
+
+  v2 = *(_QWORD *)__gnu_cxx::__normal_iterator<char *,std::string>::base(a1);
+  return v2 < *(_QWORD *)__gnu_cxx::__normal_iterator<char *,std::string>::base(a2);
+}
+
+//----- (000000000000178E) ----------------------------------------------------
+_BYTE *__fastcall std::iter_swap<__gnu_cxx::__normal_iterator<char *,std::string>,__gnu_cxx::__normal_iterator<char *,std::string>>(
+        __int64 a1,
+        __int64 a2)
+{
+  _BYTE *v2; // rbx
+  _BYTE *v3; // rax
+  __int64 v5; // [rsp+0h] [rbp-20h] BYREF
+  __int64 v6[3]; // [rsp+8h] [rbp-18h] BYREF
+
+  v6[0] = a1;
+  v5 = a2;
+  v2 = (_BYTE *)__gnu_cxx::__normal_iterator<char *,std::string>::operator*((__int64)&v5);
+  v3 = (_BYTE *)__gnu_cxx::__normal_iterator<char *,std::string>::operator*((__int64)v6);
+  return std::swap<char>(v3, v2);
+}
+// 178E: using guessed type __int64 var_18[3];
+
+//----- (00000000000017CE) ----------------------------------------------------
+_QWORD *__fastcall __gnu_cxx::__normal_iterator<char *,std::string>::operator++(_QWORD *a1)
+{
+  ++*a1;
+  return a1;
+}
+
+//----- (00000000000017EE) ----------------------------------------------------
+__int64 __fastcall __gnu_cxx::__normal_iterator<char *,std::string>::base(__int64 a1)
+{
+  return a1;
+}
+
+//----- (00000000000017FC) ----------------------------------------------------
+__int64 __fastcall __gnu_cxx::__normal_iterator<char *,std::string>::operator*(__int64 a1)
+{
+  return *(_QWORD *)a1;
+}
+
+//----- (000000000000180D) ----------------------------------------------------
+__int64 __fastcall std::move<char &>(__int64 a1)
+{
+  return a1;
+}
+
+//----- (000000000000181B) ----------------------------------------------------
+_BYTE *__fastcall std::swap<char>(_BYTE *a1, _BYTE *a2)
+{
+  char v2; // dl
+  _BYTE *result; // rax
+  char v4; // [rsp+1Fh] [rbp-1h] BYREF
+
+  v4 = *(_BYTE *)std::move<char &>((__int64)a1);
+  *a1 = *(_BYTE *)std::move<char &>((__int64)a2);
+  v2 = *(_BYTE *)std::move<char &>((__int64)&v4);
+  result = a2;
+  *a2 = v2;
+  return result;
+}
+
+//----- (0000000000001870) ----------------------------------------------------
+void __fastcall _libc_csu_init(unsigned int a1, __int64 a2, __int64 a3)
+{
+  signed __int64 v4; // rbp
+  __int64 i; // rbx
+
+  v4 = &_do_global_dtors_aux_fini_array_entry - &_frame_dummy_init_array_entry;
+  init_proc();
+  if ( v4 )
+  {
+    for ( i = 0LL; i != v4; ++i )
+      ((void (__fastcall *)(_QWORD, __int64, __int64))*(&_frame_dummy_init_array_entry + i))(a1, a2, a3);
+  }
+}
+// 1270: using guessed type __int64 __fastcall frame_dummy(_QWORD, _QWORD, _QWORD);
+// 3DA0: using guessed type __int64 (__fastcall *_frame_dummy_init_array_entry)();
+// 3DB0: using guessed type __int64 (__fastcall *_do_global_dtors_aux_fini_array_entry)();
+
+//----- (00000000000018E4) ----------------------------------------------------
+void term_proc()
+{
+  ;
+}
