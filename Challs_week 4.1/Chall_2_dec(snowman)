@@ -1,0 +1,693 @@
+
+int64_t __gmon_start__ = 0;
+
+void _init() {
+    int64_t rax1;
+
+    rax1 = __gmon_start__;
+    if (rax1) {
+        rax1();
+    }
+    return;
+}
+
+int64_t __cxa_finalize = 0;
+
+void fun_1180(int64_t rdi) {
+    goto __cxa_finalize;
+}
+
+/* std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string() */
+int64_t _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1Ev = 0x1126;
+
+void fun_1120(void* rdi, void* rsi) {
+    goto _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1Ev;
+}
+
+/* std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::operator+=(char const*) */
+int64_t _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEpLEPKc = 0x10c6;
+
+void fun_10c0(void* rdi, int64_t rsi) {
+    goto _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEpLEPKc;
+}
+
+/* std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() */
+int64_t _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev = 0x1076;
+
+void fun_1070(void* rdi, void* rsi) {
+    goto _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev;
+}
+
+/* std::ios_base::Init::Init() */
+int64_t _ZNSt8ios_base4InitC1Ev = 0x1146;
+
+void fun_1140(int64_t rdi) {
+    goto _ZNSt8ios_base4InitC1Ev;
+}
+
+int64_t __cxa_atexit = 0x10b6;
+
+void fun_10b0(int64_t rdi, int64_t rsi, int64_t rdx) {
+    goto __cxa_atexit;
+}
+
+/* std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::size() const */
+int64_t _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4sizeEv = 0x1096;
+
+int64_t fun_1090(void* rdi) {
+    goto _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4sizeEv;
+}
+
+/* std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::data() const */
+int64_t _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4dataEv = 0x1106;
+
+int64_t fun_1100(void* rdi) {
+    goto _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4dataEv;
+}
+
+int32_t fun_1050(int64_t rdi, int64_t rsi, int64_t rdx);
+
+/* std::char_traits<char>::compare(char const*, char const*, unsigned long) */
+int32_t _ZNSt11char_traitsIcE7compareEPKcS2_m(int64_t rdi, int64_t rsi, int64_t rdx) {
+    int32_t eax4;
+
+    if (rdx) {
+        eax4 = fun_1050(rdi, rsi, rdx);
+    } else {
+        eax4 = 0;
+    }
+    return eax4;
+}
+
+/* __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator--() */
+int64_t* _ZN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEmmEv(int64_t* rdi, uint64_t* rsi) {
+    *rdi = *rdi - 1;
+    return rdi;
+}
+
+/* __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::base() const */
+uint64_t* _ZNK9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE4baseEv(uint64_t* rdi);
+
+/* bool __gnu_cxx::operator< <char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) */
+unsigned char _ZN9__gnu_cxxltIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEbRKNS_17__normal_iteratorIT_T0_EESD_(uint64_t* rdi, uint64_t* rsi) {
+    uint64_t* rax3;
+    uint64_t rbx4;
+    uint64_t* rax5;
+
+    rax3 = _ZNK9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE4baseEv(rdi);
+    rbx4 = *rax3;
+    rax5 = _ZNK9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE4baseEv(rsi);
+    return static_cast<unsigned char>(reinterpret_cast<uint1_t>(rbx4 < *rax5));
+}
+
+/* __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator*() const */
+unsigned char* _ZNK9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEdeEv(unsigned char** rdi);
+
+/* std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<char> >, std::is_move_constructible<char>, std::is_move_assignable<char> >::value, void>::type std::swap<char>(char&, char&) */
+void _ZSt4swapIcENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS4_ESt18is_move_assignableIS4_EEE5valueEvE4typeERS4_SE_(unsigned char* rdi, unsigned char* rsi);
+
+/* void std::iter_swap<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >) */
+void _ZSt9iter_swapIN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEES9_EvT_T0_(int64_t rdi, uint64_t* rsi) {
+    void* rbp3;
+    unsigned char* rax4;
+    unsigned char* rax5;
+
+    rbp3 = reinterpret_cast<void*>(reinterpret_cast<int64_t>(__zero_stack_offset()) - 8);
+    rax4 = _ZNK9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEdeEv(reinterpret_cast<int64_t>(rbp3) - 32);
+    rax5 = _ZNK9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEdeEv(reinterpret_cast<int64_t>(rbp3) - 24);
+    _ZSt4swapIcENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS4_ESt18is_move_assignableIS4_EEE5valueEvE4typeERS4_SE_(rax5, rax4);
+    return;
+}
+
+/* __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator++() */
+int64_t* _ZN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEppEv(int64_t* rdi, uint64_t* rsi) {
+    *rdi = *rdi + 1;
+    return rdi;
+}
+
+int64_t _ITM_deregisterTMCloneTable = 0;
+
+int64_t deregister_tm_clones(int64_t rdi) {
+    int64_t rax2;
+
+    rax2 = 0x40d8;
+    if (1 || (rax2 = _ITM_deregisterTMCloneTable, rax2 == 0)) {
+        return rax2;
+    } else {
+        goto rax2;
+    }
+}
+
+/* std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::end() */
+int64_t _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE3endEv = 0x1066;
+
+uint64_t* fun_1060(void* rdi, void* rsi) {
+    goto _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE3endEv;
+}
+
+/* std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::begin() */
+int64_t _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5beginEv = 0x10a6;
+
+int64_t fun_10a0(void* rdi, void* rsi) {
+    goto _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5beginEv;
+}
+
+/* std::iterator_traits<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::iterator_category std::__iterator_category<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) */
+void _ZSt19__iterator_categoryIN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEENSt15iterator_traitsIT_E17iterator_categoryERKSB_(void* rdi);
+
+/* void std::__reverse<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::random_access_iterator_tag) */
+void _ZSt9__reverseIN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEEvT_SA_St26random_access_iterator_tag(int64_t rdi, uint64_t* rsi);
+
+/* void std::reverse<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >) */
+void _ZSt7reverseIN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEEvT_SA_(int64_t rdi, uint64_t* rsi) {
+    _ZSt19__iterator_categoryIN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEENSt15iterator_traitsIT_E17iterator_categoryERKSB_(reinterpret_cast<int64_t>(__zero_stack_offset()) - 8 - 24);
+    _ZSt9__reverseIN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEEvT_SA_St26random_access_iterator_tag(rdi, rsi);
+    return;
+}
+
+/* __gnu_cxx::__enable_if<std::__is_char<char>::__value, bool>::__type std::operator==<char>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) */
+signed char _ZSteqIcEN9__gnu_cxx11__enable_ifIXsrSt9__is_charIT_E7__valueEbE6__typeERKNSt7__cxx1112basic_stringIS3_St11char_traitsIS3_ESaIS3_EEESE_(void* rdi, void* rsi) {
+    int64_t rax3;
+    int64_t rax4;
+    int64_t rax5;
+    int64_t rax6;
+    int64_t rax7;
+    int32_t eax8;
+    int32_t eax9;
+
+    rax3 = fun_1090(rdi);
+    rax4 = fun_1090(rsi);
+    if (rax3 != rax4 || (rax5 = fun_1090(rdi), rax6 = fun_1100(rsi), rax7 = fun_1100(rdi), eax8 = _ZNSt11char_traitsIcE7compareEPKcS2_m(rax7, rax6, rax5), !!eax8)) {
+        eax9 = 0;
+    } else {
+        eax9 = 1;
+    }
+    return *reinterpret_cast<signed char*>(&eax9);
+}
+
+/* std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::at(unsigned long) */
+int64_t _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE2atEm = 0x1176;
+
+unsigned char* fun_1170(void* rdi, int64_t rsi) {
+    goto _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE2atEm;
+}
+
+/* std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::operator+=(char) */
+int64_t _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEpLEc = 0x1086;
+
+void fun_1080(void* rdi, void* rsi) {
+    goto _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEpLEc;
+}
+
+/* std::allocator<char>::~allocator() */
+int64_t _ZNSaIcED1Ev = 0x10f6;
+
+void fun_10f0(void* rdi, void* rsi, void* rdx) {
+    goto _ZNSaIcED1Ev;
+}
+
+int64_t _Unwind_Resume = 0x1156;
+
+int64_t fun_1150(int64_t rdi) {
+    goto _Unwind_Resume;
+}
+
+/* std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) */
+int64_t _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc = 0x10d6;
+
+int64_t fun_10d0(int64_t rdi, int64_t rsi) {
+    goto _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc;
+}
+
+/* std::ostream::operator<<(std::ostream& (*)(std::ostream&)) */
+int64_t _ZNSolsEPFRSoS_E = 0x10e6;
+
+void fun_10e0(int64_t rdi, void* rsi) {
+    goto _ZNSolsEPFRSoS_E;
+}
+
+int64_t memcmp = 0x1056;
+
+int32_t fun_1050(int64_t rdi, int64_t rsi, int64_t rdx) {
+    goto memcmp;
+}
+
+/* std::iterator_traits<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::iterator_category std::__iterator_category<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) */
+void _ZSt19__iterator_categoryIN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEENSt15iterator_traitsIT_E17iterator_categoryERKSB_(void* rdi) {
+    return;
+}
+
+/* __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::base() const */
+uint64_t* _ZNK9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE4baseEv(uint64_t* rdi) {
+    return rdi;
+}
+
+/* bool __gnu_cxx::operator==<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) */
+unsigned char _ZN9__gnu_cxxeqIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEbRKNS_17__normal_iteratorIT_T0_EESD_(uint64_t* rdi, uint64_t* rsi) {
+    uint64_t* rax3;
+    uint64_t rbx4;
+    uint64_t* rax5;
+
+    rax3 = _ZNK9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE4baseEv(rdi);
+    rbx4 = *rax3;
+    rax5 = _ZNK9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE4baseEv(rsi);
+    return static_cast<unsigned char>(reinterpret_cast<uint1_t>(rbx4 == *rax5));
+}
+
+/* __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator*() const */
+unsigned char* _ZNK9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEdeEv(unsigned char** rdi) {
+    return *rdi;
+}
+
+/* std::remove_reference<char&>::type&& std::move<char&>(char&) */
+unsigned char* _ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_(unsigned char* rdi);
+
+/* std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<char> >, std::is_move_constructible<char>, std::is_move_assignable<char> >::value, void>::type std::swap<char>(char&, char&) */
+void _ZSt4swapIcENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS4_ESt18is_move_assignableIS4_EEE5valueEvE4typeERS4_SE_(unsigned char* rdi, unsigned char* rsi) {
+    unsigned char* rax3;
+    uint32_t edx4;
+    unsigned char* rax5;
+    uint32_t edx6;
+
+    _ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_(rdi);
+    rax3 = _ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_(rsi);
+    edx4 = *rax3;
+    *rdi = *reinterpret_cast<unsigned char*>(&edx4);
+    rax5 = _ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_(reinterpret_cast<int64_t>(__zero_stack_offset()) - 8 - 1);
+    edx6 = *rax5;
+    *rsi = *reinterpret_cast<unsigned char*>(&edx6);
+    return;
+}
+
+/* std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) */
+int64_t _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1ERKS4_ = 0x1046;
+
+void fun_1040(void* rdi, void* rsi) {
+    goto _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1ERKS4_;
+}
+
+/* std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::length() const */
+int64_t _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6lengthEv = 0x1136;
+
+int64_t fun_1130(void* rdi, void* rsi, void* rdx) {
+    goto _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6lengthEv;
+}
+
+/* void std::__reverse<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::random_access_iterator_tag) */
+void _ZSt9__reverseIN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEEvT_SA_St26random_access_iterator_tag(int64_t rdi, uint64_t* rsi) {
+    void* rbp3;
+    int64_t v4;
+    uint64_t* v5;
+    uint64_t* rsi6;
+    unsigned char al7;
+    unsigned char al8;
+
+    rbp3 = reinterpret_cast<void*>(reinterpret_cast<int64_t>(__zero_stack_offset()) - 8);
+    v4 = rdi;
+    v5 = rsi;
+    rsi6 = reinterpret_cast<uint64_t*>(reinterpret_cast<int64_t>(rbp3) - 16);
+    al7 = _ZN9__gnu_cxxeqIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEbRKNS_17__normal_iteratorIT_T0_EESD_(reinterpret_cast<int64_t>(rbp3) - 8, rsi6);
+    if (!al7) {
+        _ZN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEmmEv(reinterpret_cast<int64_t>(rbp3) - 16, rsi6);
+        while (al8 = _ZN9__gnu_cxxltIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEbRKNS_17__normal_iteratorIT_T0_EESD_(reinterpret_cast<int64_t>(rbp3) - 8, reinterpret_cast<int64_t>(rbp3) - 16), !!al8) {
+            _ZSt9iter_swapIN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEES9_EvT_T0_(v4, v5);
+            _ZN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEppEv(reinterpret_cast<int64_t>(rbp3) - 8, v5);
+            _ZN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEmmEv(reinterpret_cast<int64_t>(rbp3) - 16, v5);
+        }
+    }
+    return;
+}
+
+/* std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) */
+int64_t _ZSt7getlineIcSt11char_traitsIcESaIcEERSt13basic_istreamIT_T0_ES7_RNSt7__cxx1112basic_stringIS4_S5_T1_EE = 0x1036;
+
+void fun_1030(int64_t rdi, void* rsi) {
+    goto _ZSt7getlineIcSt11char_traitsIcESaIcEERSt13basic_istreamIT_T0_ES7_RNSt7__cxx1112basic_stringIS4_S5_T1_EE;
+}
+
+void fun_1160(void* rdi);
+
+void fun_1110(void* rdi, void* rsi, void* rdx);
+
+/* checkPassword(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) */
+signed char _Z13checkPasswordNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE(void* rdi, void* rsi) {
+    void* rbp3;
+    void* v4;
+    void* rdx5;
+    void* rsi6;
+    int64_t rax7;
+    int32_t v8;
+    int64_t rax9;
+    int32_t v10;
+    unsigned char* rax11;
+    uint32_t eax12;
+    uint64_t* rax13;
+    int64_t rax14;
+    signed char al15;
+    int32_t ebx16;
+    int32_t eax17;
+    int32_t r12d18;
+
+    rbp3 = reinterpret_cast<void*>(reinterpret_cast<int64_t>(__zero_stack_offset()) - 8);
+    v4 = rdi;
+    fun_1160(reinterpret_cast<int64_t>(rbp3) - 29);
+    rdx5 = reinterpret_cast<void*>(reinterpret_cast<int64_t>(rbp3) - 29);
+    rsi6 = reinterpret_cast<void*>("dec");
+    fun_1110(reinterpret_cast<int64_t>(rbp3) - 64, "dec", rdx5);
+    fun_10f0(reinterpret_cast<int64_t>(rbp3) - 29, "dec", rdx5);
+    rax7 = fun_1130(reinterpret_cast<int64_t>(rbp3) - 64, "dec", rdx5);
+    v8 = *reinterpret_cast<int32_t*>(&rax7);
+    rax9 = fun_1130(v4, "dec", rdx5);
+    if (rax9 != static_cast<int64_t>(--7)) 
+        goto addr_13c8_2;
+    fun_1120(reinterpret_cast<int64_t>(rbp3) - 96, "dec");
+    v10 = 0;
+    while (v10 < v8) {
+        if (v10 == v8 - 1) {
+            fun_10c0(reinterpret_cast<int64_t>(rbp3) - 96, "k");
+            fun_10c0(reinterpret_cast<int64_t>(rbp3) - 96, "car");
+        }
+        rax11 = fun_1170(reinterpret_cast<int64_t>(rbp3) - 64, static_cast<int64_t>(v10));
+        eax12 = *rax11;
+        *reinterpret_cast<int32_t*>(&rsi6) = *reinterpret_cast<signed char*>(&eax12);
+        *reinterpret_cast<int32_t*>(reinterpret_cast<int64_t>(&rsi6) + 4) = 0;
+        fun_1080(reinterpret_cast<int64_t>(rbp3) - 96, rsi6);
+        ++v10;
+    }
+    rax13 = fun_1060(v4, rsi6);
+    rax14 = fun_10a0(v4, rsi6);
+    _ZSt7reverseIN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEEvT_SA_(rax14, rax13);
+    rsi6 = reinterpret_cast<void*>(reinterpret_cast<int64_t>(rbp3) - 96);
+    al15 = _ZSteqIcEN9__gnu_cxx11__enable_ifIXsrSt9__is_charIT_E7__valueEbE6__typeERKNSt7__cxx1112basic_stringIS3_St11char_traitsIS3_ESaIS3_EEESE_(v4, rsi6);
+    if (al15) 
+        goto addr_13a5_9;
+    ebx16 = 1;
+    addr_13b7_11:
+    fun_1070(reinterpret_cast<int64_t>(rbp3) - 96, rsi6);
+    if (ebx16 != 1) {
+        addr_13ce_12:
+        fun_1070(reinterpret_cast<int64_t>(rbp3) - 64, rsi6);
+        eax17 = r12d18;
+    } else {
+        addr_13c8_2:
+        r12d18 = 0;
+        goto addr_13ce_12;
+    }
+    return *reinterpret_cast<signed char*>(&eax17);
+    addr_13a5_9:
+    r12d18 = 1;
+    ebx16 = 0;
+    goto addr_13b7_11;
+}
+
+/* std::ios_base::Init::~Init() */
+int64_t _ZNSt8ios_base4InitD1Ev = 0;
+
+/* __static_initialization_and_destruction_0(int, int) */
+void _Z41__static_initialization_and_destruction_0ii(int32_t edi, int32_t esi) {
+    int64_t rax3;
+
+    if (edi == 1 && esi == 0xffff) {
+        fun_1140(0x4319);
+        rax3 = _ZNSt8ios_base4InitD1Ev;
+        fun_10b0(rax3, 0x4319, 0x40c8);
+    }
+    return;
+}
+
+/* std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&) */
+int64_t _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1EPKcRKS3_ = 0x1116;
+
+void fun_1110(void* rdi, void* rsi, void* rdx) {
+    goto _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1EPKcRKS3_;
+}
+
+/* std::remove_reference<char&>::type&& std::move<char&>(char&) */
+unsigned char* _ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_(unsigned char* rdi) {
+    return rdi;
+}
+
+/* std::allocator<char>::allocator() */
+int64_t _ZNSaIcEC1Ev = 0x1166;
+
+void fun_1160(void* rdi) {
+    goto _ZNSaIcEC1Ev;
+}
+
+int64_t __libc_start_main = 0;
+
+int64_t main();
+
+void __libc_csu_init(int32_t edi, int64_t rsi, int64_t rdx);
+
+void __libc_csu_fini();
+
+void _start() {
+    void* rsp1;
+    int64_t rdx2;
+    int64_t rax3;
+
+    rsp1 = reinterpret_cast<void*>(reinterpret_cast<int64_t>(__zero_stack_offset()) + 8);
+    __libc_start_main(main, __return_address(), rsp1, __libc_csu_init, __libc_csu_fini, rdx2, (reinterpret_cast<uint64_t>(rsp1) & 0xfffffffffffffff0) - 8 - 8, rax3);
+    __asm__("hlt ");
+}
+
+void _fini() {
+    return;
+}
+
+void fun_1222() {
+    return;
+}
+
+void fun_13df() {
+    int64_t rbp1;
+    void* rsi2;
+    void* rdx3;
+    int64_t rax4;
+    int64_t rax5;
+    int64_t rbp6;
+    void* rsi7;
+    int64_t rbp8;
+    void* rsi9;
+
+    fun_10f0(rbp1 - 29, rsi2, rdx3);
+    rax5 = fun_1150(rax4);
+    fun_1070(rbp6 - 96, rsi7);
+    fun_1070(rbp8 - 64, rsi9);
+    fun_1150(rax5);
+}
+
+void __libc_csu_fini() {
+    return;
+}
+
+int64_t g4010 = 0;
+
+void fun_1036() {
+    goto g4010;
+}
+
+int64_t _ITM_registerTMCloneTable = 0;
+
+void fun_11e9() {
+    int64_t rax1;
+
+    if (1) 
+        goto 0x1228;
+    rax1 = _ITM_registerTMCloneTable;
+    if (!rax1) 
+        goto 0x1228;
+    goto rax1;
+}
+
+/* completed.7389 */
+signed char completed_7389 = 0;
+
+int64_t __dso_handle = 0x40c8;
+
+int64_t __do_global_dtors_aux() {
+    int1_t zf1;
+    int64_t rax2;
+    int1_t zf3;
+    int64_t rdi4;
+    int64_t rax5;
+
+    zf1 = completed_7389 == 0;
+    if (!zf1) {
+        return rax2;
+    } else {
+        zf3 = __cxa_finalize == 0;
+        if (!zf3) {
+            rdi4 = __dso_handle;
+            fun_1180(rdi4);
+        }
+        rax5 = deregister_tm_clones(rdi4);
+        completed_7389 = 1;
+        return rax5;
+    }
+}
+
+void fun_1126() {
+    goto 0x1020;
+}
+
+void fun_10c6() {
+    goto 0x1020;
+}
+
+void fun_1076() {
+    goto 0x1020;
+}
+
+/* std::basic_ostream<char, std::char_traits<char> >& std::endl<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&) */
+void* _ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_ = reinterpret_cast<void*>(0);
+
+int64_t main() {
+    void* rbp1;
+    void* rsi2;
+    int64_t rax3;
+    void* rax4;
+    void* rsi5;
+    signed char al6;
+    int64_t rax7;
+    int64_t rax8;
+    void* rax9;
+
+    rbp1 = reinterpret_cast<void*>(reinterpret_cast<int64_t>(__zero_stack_offset()) - 8);
+    fun_1120(reinterpret_cast<int64_t>(rbp1) - 80, rsi2);
+    rax3 = fun_10d0(0x40e0, "Enter the password:");
+    rax4 = _ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_;
+    fun_10e0(rax3, rax4);
+    fun_1030(0x4200, reinterpret_cast<int64_t>(rbp1) - 80);
+    rsi5 = reinterpret_cast<void*>(reinterpret_cast<int64_t>(rbp1) - 80);
+    fun_1040(reinterpret_cast<int64_t>(rbp1) - 48, rsi5);
+    al6 = _Z13checkPasswordNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE(reinterpret_cast<int64_t>(rbp1) - 48, rsi5);
+    if (!al6) {
+        rax7 = reinterpret_cast<int64_t>("Login failed");
+    } else {
+        rax7 = reinterpret_cast<int64_t>("Login successful");
+    }
+    rax8 = fun_10d0(0x40e0, rax7);
+    rax9 = _ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_;
+    fun_10e0(rax8, rax9);
+    fun_1070(reinterpret_cast<int64_t>(rbp1) - 48, rax9);
+    fun_1070(reinterpret_cast<int64_t>(rbp1) - 80, rax9);
+    return 0;
+}
+
+void fun_14f0() {
+    int64_t rbp1;
+    void* rsi2;
+    int64_t rbp3;
+    void* rsi4;
+    int64_t rax5;
+
+    fun_1070(rbp1 - 48, rsi2);
+    fun_1070(rbp3 - 80, rsi4);
+    fun_1150(rax5);
+}
+
+void _GLOBAL__sub_I__Z13checkPasswordNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE() {
+    _Z41__static_initialization_and_destruction_0ii(1, 0xffff);
+    return;
+}
+
+void fun_1146() {
+    goto 0x1020;
+}
+
+void fun_10b6() {
+    goto 0x1020;
+}
+
+void fun_1096() {
+    goto 0x1020;
+}
+
+void fun_1106() {
+    goto 0x1020;
+}
+
+void fun_1066() {
+    goto 0x1020;
+}
+
+void fun_10a6() {
+    goto 0x1020;
+}
+
+void fun_1176() {
+    goto 0x1020;
+}
+
+void fun_1086() {
+    goto 0x1020;
+}
+
+void fun_10f6() {
+    goto 0x1020;
+}
+
+void fun_1156() {
+    goto 0x1020;
+}
+
+void fun_10d6() {
+    goto 0x1020;
+}
+
+void fun_10e6() {
+    goto 0x1020;
+}
+
+void fun_1501() {
+}
+
+void fun_1056() {
+    goto 0x1020;
+}
+
+void __libc_csu_init(int32_t edi, int64_t rsi, int64_t rdx) {
+    int64_t r15_4;
+    int32_t r13d5;
+    int64_t r14_6;
+    int64_t rbx7;
+    int64_t rdi8;
+
+    r15_4 = rdx;
+    r13d5 = edi;
+    r14_6 = rsi;
+    _init();
+    if (!0) {
+        *reinterpret_cast<int32_t*>(&rbx7) = 0;
+        *reinterpret_cast<int32_t*>(reinterpret_cast<int64_t>(&rbx7) + 4) = 0;
+        do {
+            *reinterpret_cast<int32_t*>(&rdi8) = r13d5;
+            *reinterpret_cast<int32_t*>(reinterpret_cast<int64_t>(&rdi8) + 4) = 0;
+            *reinterpret_cast<int64_t*>(0x3da0 + rbx7 * 8)(rdi8, r14_6, r15_4);
+            ++rbx7;
+        } while (2 != rbx7);
+    }
+    return;
+}
+
+void fun_1046() {
+    goto 0x1020;
+}
+
+void frame_dummy() {
+    goto 0x11f0;
+}
+
+void fun_1136() {
+    goto 0x1020;
+}
+
+void fun_1116() {
+    goto 0x1020;
+}
+
+void fun_1166() {
+    goto 0x1020;
+}
