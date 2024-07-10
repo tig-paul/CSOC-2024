@@ -253,7 +253,7 @@ int main(int argc, char **argv)
 
 ### Writeup:
 
-The hexadecimal values of 'a', 'b', 'c' and 'd' are `0x61`, `0x62`, `0x63` and `0x64` respectively and protostar is in little endian. So, `0x61626364` in little endian would be `dcba`. I compiled and executed the given code with several arguments and when I tried with first 64 random characters and next 4 characters as **dcba** but it didn't work. Next I added 4 more random characters and this time got `you have correctly got the variable to the right value`.
+The hexadecimal values of 'a', 'b', 'c' and 'd' are `0x61`, `0x62`, `0x63` and `0x64` respectively and protostar is in little endian. So, `0x61626364` in little endian would be `'dcba'`. I compiled and executed the given code with several arguments. Firstly, I tried with first 64 characters randomly and next 4 characters as **'dcba'** but it didn't work. Next I added 4 more random characters at the beginning and this time got `you have correctly got the variable to the right value`.
 
 Exploit:
 
