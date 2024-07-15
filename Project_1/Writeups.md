@@ -33,7 +33,7 @@ The goal of the project is to access the savefile of a game and make a deep rese
 
 ## Video Explanation:
 
-[![Savefile Editing](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=Ud7OlH73U7U)
+[![Savefile Editing](https://img.youtube.com/vi/Ud7OlH73U7U/0.jpg)](https://www.youtube.com/watch?v=Ud7OlH73U7U)
 
 ## Result:
 
